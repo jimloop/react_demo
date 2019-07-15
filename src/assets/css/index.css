@@ -15,3 +15,13 @@ code {
 .red {
   color: red;
 }
+
+.list{
+  line-height: 40px;
+}
+
+.list li{
+  height: 44px;
+  line-height: 44px;
+  text-align: left;
+}
