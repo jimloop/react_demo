@@ -25,7 +25,7 @@ class Todolist1 extends Component{
     }
 
     addData=(key)=>{
-        if(key.keyCode!=13)return;
+        if(key.keyCode!==13)return;
             let title=this.refs.title.value;
             if(title==="")return
             let tempList=this.state.list;
@@ -66,7 +66,7 @@ class Todolist1 extends Component{
                     this.state.list.map((value,key)=>{
                         if(!value.checked){
                             return (
-                                <li><input type="checkbox" checked={value.checked} onChange={this.checkChange.bind(this,key)}/>{value.title}</li>
+                                <li key={key}><input type="checkbox" checked={value.checked} onChange={this.checkChange.bind(this,key)}/>{value.title}</li>
                             )
                         }
                     })
@@ -77,7 +77,7 @@ class Todolist1 extends Component{
                     this.state.list.map((value,key)=>{
                         if(value.checked){
                             return (
-                                <li><input type="checkbox" checked={value.checked} onChange={this.checkChange.bind(this,key)}/>{value.title}</li>
+                                <li key={key}><input type="checkbox" checked={value.checked} onChange={this.checkChange.bind(this,key)}/>{value.title}</li>
                             )
                         }
                     })

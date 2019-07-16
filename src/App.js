@@ -6,6 +6,8 @@ import News from "./component/News";
 import List from "./component/List";
 import Todolist1 from "./component/Todolist1";
 import Reactform from "./component/Reactform";
+import Axios from "./component/Axios";
+import Fetchjsonp from "./component/Fetchjsonp";
 
 function App() {
   return (
@@ -21,9 +23,13 @@ function App() {
         <Todolist1/>
         <br/><hr/>
         <Reactform/>
+        <br/><hr/>
+        <Axios/>
+        <br/><hr/>
+        <Fetchjsonp/>
       </header>
     </div>
   );
 }
 
-export default App;
+//export default App;
